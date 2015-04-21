@@ -21,5 +21,6 @@ barplot(height = plot1.dat$PM25,
         main = "PM25 Emissions (1999 - 2008)",
         ylab = "PM25 emissions from all sources (tons)",
         xlab = "Year")
-
+dev.copy(png,"plot1.png",height=480,width=480)
+dev.off()
 options(opt)
