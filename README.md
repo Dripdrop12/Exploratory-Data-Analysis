@@ -1,7 +1,6 @@
 # Exploratory-Data-Analysis
-This is a repository for assignments completed during the Exploratory Data Analysis class, which is one of nine courses in a Data Science specialization offered by Johns Hopkins University on Coursera.org
 
-# Project 2
+## Project 2
 
 Code and png files for plots that answer the following questions are stored in this repository.  For question 1, the plot is called plot1.png and the code that can recreate it is called plot1.R.  The same naming scheme is used for each of the following plots and code files for these 6 questions:
 
