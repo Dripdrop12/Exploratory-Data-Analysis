@@ -1,6 +1,5 @@
 # Across the United States, how have emissions from coal combustion-related sources changed from 1999-2008? #
 
-
 # Set the working directory to the local clone of my repository #
 setwd("C:/Users/PDAUSER/Desktop/Exploratory-Data-Analysis")
 
@@ -23,7 +22,6 @@ plot4.dat <- NEI %>%
 plot4.dat$year <- as.factor(plot4.dat$year)
 
 # plot the subset of PM 2.5 Emissions caused by coal combustion-related sources #
-
 barplot(height = plot4.dat$PM25,        
         names.arg = plot4.dat$year,
         col="red",
