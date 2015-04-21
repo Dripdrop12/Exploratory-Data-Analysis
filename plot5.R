@@ -3,7 +3,7 @@
 # Set the working directory to the local clone of my repository #
 setwd("C:/Users/PDAUSER/Desktop/Exploratory-Data-Analysis")
 
-# Install Necessary Packages #
+# Install necessary packages #
 install.packages(c("dplyr","ggplot2"))
 library(dplyr)
 library(ggplot2)
@@ -11,7 +11,7 @@ library(ggplot2)
 # First read in the data #
 NEI <- readRDS("summarySCC_PM25.rds")
 
-# Find all the coal combustion-related sources of emissions using grep #
+# Find all the motor vehicle-related sources of emissions using grep #
 motor <- as.character(SCC$SCC[grep("Motor",x=SCC$Short.Name)])
 
 # Create the dataset for the plot #
@@ -22,7 +22,7 @@ plot5.dat <- NEI %>%
         summarize(PM25 = sum(Emissions))
 plot5.dat$year <- as.factor(plot5.dat$year)
 
-# plot the subset of PM 2.5 Emissions caused by coal combustion-related sources #
+# plot the subset of PM 2.5 Emissions caused by motor vehicle-related sources #
 barplot(height = plot5.dat$PM25,        
         names.arg = plot5.dat$year,
         col="red",
