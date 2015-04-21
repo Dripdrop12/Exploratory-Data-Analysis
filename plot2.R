@@ -7,16 +7,16 @@ setwd("C:/Users/PDAUSER/Desktop/Exploratory-Data-Analysis")
 install.packages(c("dplyr"))
 library(dplyr)
 
-# First I read in the data #
+# First read in the data #
 NEI <- readRDS("summarySCC_PM25.rds")
 
-# Then I summed the PM25 emissions by year and filtered it to include Baltimore only #
+# Then sum the PM25 emissions by year and filter it to include Baltimore only #
 plot2.dat <- NEI %>%
         group_by(year) %>%
         filter(fips == "24510") %>%
         summarize(PM25 = sum(Emissions)) 
 
-# Finally, I created a barplot for Baltimore #
+# Finally, create a barplot for Baltimore #
 dev.copy(png,"plot2.png",height=480,width=640)
 barplot(height = plot2.dat$PM25,        
         names.arg = plot2.dat$year,
