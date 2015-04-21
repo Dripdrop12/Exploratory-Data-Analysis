@@ -3,7 +3,7 @@ This is a repository for assignments completed during the Exploratory Data Analy
 
 # Project 2
 
-Code and png files for the following plots are stored in this repository.  For question 1, the plot is called plot1.png and its code is called plot1.R.  The same naming scheme is applied to each of the following six questions:
+Code and png files for the following plots are stored in this repository.  For question 1, the plot is called plot1.png and its code is called plot1.R.  The same naming scheme is used for each of the following six questions and their respective plots and code files:
 
 1. Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
 
