@@ -32,7 +32,7 @@ ggplot(data = plot6.dat,
         facet_grid(.~fips)+
         xlab("Year")+
         ylab("PM 2.5 Emissions (tons)")+
-        ggtitle("PM 2.5 Emissions (1999-2008)")+
+        ggtitle("PM 2.5 Emissions from Motor Vehicles (1999-2008)")+
         theme(plot.title = element_text(vjust = .8,face="bold"))
 dev.copy(png,"plot6.png",height=480,width=640)
 dev.off()
